@@ -19,6 +19,7 @@ namespace JSP.Controllers
             ViewBag.Message = "Your application description page.";
             //JSP.Models.Bus bus = new Models.Bus();
             BusLineDb bus = new BusLineDb();
+            bus.SaveChanges();
             return View(bus.Buses);
         }
 
