@@ -7,7 +7,7 @@ using System.Web;
 
 namespace JSP.Models
 {
-    public class BusLineDb : IdentityDbContext<ApplicationUser>
+    public class BusLineDb : DbContext
     {
         public DbSet<BusLine> BusLines { get; set; }
         public DbSet<BusStop> BusStops { get; set; }
